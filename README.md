@@ -12,7 +12,10 @@ Summary of the business problem you are trying to solve, and the data questions 
 
  This project's goal was to develop a model that accurately predicts housing prices in Kings County, Washington. This model can subsequently be used by many constituents within the real estate industry. Agents and brokers will be able to utilize their doman specific knowledge as well as this model, to predict trends in housing prcies. This will give them a data-driven model to predict housing prices, along with their hunches and domain specifc knowledge. Additionally, homebuyers and sellers, could use this to to help assist with the deciion making process on when to buy or sell a home. 
 
- That being said, 
+ That being said, the data questions to answer include:
+ * What attributes contribute to higher housing prices, and of those which has a greater effect?
+ * Given those attributes, which have a greater effect on housing prices?
+ * 
 
 ***
 Questions to consider:
@@ -56,7 +59,7 @@ Questions to consider:
 Heat map of housing dispersion with longitudinal outliers in dataset:
 
 ### Visual 1
-![graph1](./images/rural_east_markers_on_map.html)
+![graph1](./images/rural_east_markers.png)
 
 ## Conclusions
 
