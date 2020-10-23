@@ -52,7 +52,7 @@ The EDA began with basic descriptive statistics such as; mean, median, interquar
 
 Statistical tests for significance prompted various features to be engineered, for example: 
 
-_If a house was built before the median year houses were built in this dataset, and has NOT received a renovation, was the mean/median `price` of said house significantly different then those that received renovations?_. 
+_If a house was built before the median year houses were built in this dataset, and has NOT received a renovation, was the mean/median `price` of said house significantly different then those that received renovations?_ 
 
 Engineered features such as the aforementioned, allowed patterns to be discovered within the data that were not initially discoverable.  After feature engineering, the data was split into separate training and test sets. Once fit each set, the model was run on the training and test set respectively. The lack of significant difference between output of train and test split allowed for the assumption the model that was not overfit. Some feature selection techniques were administered to see if altering feature selection would have a positive impact on the model. The best model included all features from analysis and was subsequently fit to the entire data set and saved for future use. 
 
