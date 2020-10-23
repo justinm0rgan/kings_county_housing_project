@@ -8,12 +8,12 @@ The goal of this project was to create a linear regression model that would accu
 
 ## Business Problem
 
-This project's goal was to develop a model that accurately predicts housing prices in Kings County, Washington. This model can subsequently be used by many constituents within the real estate industry. Agents and brokers will be able to utilize their doman specific knowledge as well as this model, to predict trends in housing prcies. This will give them a data-driven model to predict housing prices, along with their hunches and domain specifc knowledge. Additionally, homebuyers and sellers, could use this to to help assist with the deciion making process on when to buy or sell a home. 
+This project's goal was to develop a model that accurately predicts housing prices in Kings County, Washington. This model can subsequently be used by many constituents within the real estate industry. Agents and brokers will be able to utilize their doman specific knowledge as well as this model, to predict trends in housing prcies. This will give them a data-driven model to predict housing prices, along with their hunches and domain specifc knowledge. Additionally, homebuyers and sellers, could use this to to help assist with the decision making process on when to buy or sell a home. 
 
-That being said, the question at hand is:
-* What attributes contribute to higher housing prices, and of those which has a greater effect?
+That being said, the main question was:
+* _What attributes of the data contributed to higher housing prices, and which of those had a greater effect?_
 
-Once the aforementioed is answered, features could be included and engineered that would best contribute the models ability to predict housing prices. 
+Once the aforementioed was answered, features could be included and engineered that would best contribute to the models ability to predict housing prices. 
 
 ## Data
 
@@ -21,7 +21,7 @@ The data being used for this project provdied various attributes for homes that 
 
 The data schema is as follows:
 
-# Column Names and descriptions for Kings County Data Set
+### Column Names and descriptions for Kings County Data Set
 * **id** - unique ID for a house
 * **date** - Date day house was sold
 * **price** - Price is prediction target
@@ -44,29 +44,29 @@ The data schema is as follows:
 * **sqft_living15** - The square footage of interior housing living space for the nearest 15 neighbors
 * **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
 
-Primariy consideration was given to obvious indicators such as, total sqaure feet, amount of bedrooms and location. However, through exploratory data anlysis and other methodologies, additional indicators proved to be salient price indicators. 
+Primarily consideration was given to obvious indicators such as, total square feet, amount of bedrooms and location. However, through exploratory data anlysis and other methodologies, additional factors proved to be salient price indicators. 
 
 ## Methods
 
-The exploratory data analysis (EDA) began with basic descriptive statistics such as,; mean, median, interquartile range, min and max. These were subsequently visualized through scatterplots to understand linear relatinships with the target varialbe `price`. Histrograms were created to look at distributions of data and aid in outlier identification. Outliers were handled on a case by case basis through descriptive statistics interpretation where appropiate. Once basic data cleaning was done, some statistical tests were administered to get a better understanding of the significance of assumptions made during the EDA process. This prompted various features to be engineered, for example: _if a house was built before the median of years houses were built, and has NOT received a renovation, was the mean/median `price` of said house significantly different then houses that received renovations?_. Engineered features such as the aforementioned, allowed patterns to be discovered within the data that are not initially discoverable.  After feature engineering, the data was split to create a training/test set, which enables the model to be fit to a subset of the data. Once this was fit, the model was run on the training and test set respectively. The lack of significant difference between output of train and test split allowed for the assumption of a model that was not overfit. A few different feature selection techniques were administered to see if altering feature selection would have a positive impact on the model. The best model included all features from analysis and was subsequently fit to the entire data set and saved for future use. 
+The exploratory data analysis (EDA) began with basic descriptive statistics such as,; mean, median, interquartile range, min and max. These were subsequently visualized through scatterplots to understand linear relatinships with the target varialbe `price`. Histrograms were created to look at distributions of data and aid in outlier identification. Outliers were handled on a case by case basis through descriptive statistics interpretation where appropiate. Once basic data cleaning was done, some statistical tests were administered to get a better understanding of the significance of assumptions made during the EDA process. 
+
+Statistical tests for significance prompted various features to be engineered, for example: _if a house was built before the median of years houses were built, and has NOT received a renovation, was the mean/median `price` of said house significantly different then houses that received renovations?_. Engineered features such as the aforementioned, allowed patterns to be discovered within the data that are not initially discoverable.  After feature engineering, the data was split to create a training/test set, which enables the model to be fit to a subset of the data. Once this was fit, the model was run on the training and test set respectively. The lack of significant difference between output of train and test split allowed for the assumption of a model that was not overfit. A few different feature selection techniques were administered to see if altering feature selection would have a positive impact on the model. The best model included all features from analysis and was subsequently fit to the entire data set and saved for future use. 
 
 ## Results
 
 Some results came out as expected. For instance, total square feet of living space, number of bedrooms and location had a high influence on price. However, other aspects that initially did not seem as important proved strong price indicators. For instance, view proved to be an important indicator, and not solely how high the grade was within the scoring system, but more simply did the house have a view at all or not. Grade which was the overall grade given to the housing unit, based on King County grading system, was a strong indicator of price. This was more of an aggreagate of multiple aspects of each home, however if grade scored well it was a more effecient indcator. 
 
-Heat map of housing dispersion with longitudinal outliers in dataset:
-
 ### Relatiionships to target variable of price
 ![graph](./images/scatterplot_eda.png)
 
-* Clusters of points around the regression line indicates how linear the relationship of that particular variable is to the target `price`
-* Points aligned in columns indicates a grading system
+* Clusters of points around the regression line indicates how strong the relationship of that particular variable is to the target `price`
+* Points aligned in columns indicates a grading system like `view` and `grade`.
 
 ### Geographic outliers
 ![graph1](./images/rural_east_markers.png)
 
 * Shows dispersion of houses within the dataset
-* Points on map to the east indicate homes where the mean price was 50% less then the aggreate to the west
+* Points on map to the east indicate homes where the mean price was 50% less then the main aggregate to the west
 
 ## Conclusions
 
@@ -78,7 +78,7 @@ A combination of many of the datapoints and engineered features where used to de
 
 Please review full analysis in the following [Jupyter Notebook](./Kings_County_Housing_Data_Project.ipynb).
 
-For any additional questions, please contact **Justin Williams, justinmorganwilliams@newschool.edu**
+For any additional questions, please contact: **Justin Williams, justinmorganwilliams@newschool.edu**
 
 ## Repository Structure
 
