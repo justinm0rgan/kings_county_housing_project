@@ -22,27 +22,29 @@ The data being used for this project provided various attributes for homes that 
 The data schema is as follows:
 
 ### Column Names and descriptions for Kings County Data Set
-* **id** - unique ID for a house
-* **date** - Date day house was sold
-* **price** - Price is prediction target
-* **bedrooms** - Number of bedrooms
-* **bathrooms** - Number of bathrooms
-* **sqft_living** - square footage of the home
-* **sqft_lot** - square footage of the lot
-* **floors** - Total floors (levels) in house
-* **waterfront** - Whether house has a view to a waterfront
-* **view** - Number of times house has been viewed
-* **condition** - How good the condition is (overall)
-* **grade** - overall grade given to the housing unit, based on King County grading system
-* **sqft_above** - square footage of house (apart from basement)
-* **sqft_basement** - square footage of the basement
-* **yr_built** - Year when house was built
-* **yr_renovated** - Year when house was renovated
-* **zipcode** - zip code in which house is located
-* **lat** - Latitude coordinate
-* **long** - Longitude coordinate
-* **sqft_living15** - The square footage of interior housing living space for the nearest 15 neighbors
-* **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
+| #  | name           | description                                                                         |
+|----|----------------|-------------------------------------------------------------------------------------|
+| 1  | id             |  unique ID for a house                                                              |
+| 2  | date           |  Date day house was sold                                                            |
+| 3  | price          |  Price is prediction target                                                         |
+| 4  | bedrooms       |  Number of bedrooms                                                                 |
+| 5  | bathrooms      |  Number of bathrooms                                                                |
+| 6  | sqft_living    |  square footage of the home                                                         |
+| 7  | sqft_lot       |  square footage of the lot                                                          |
+| 8  | floors         |  Total floors (levels) in house                                                     |
+| 9  | waterfront     |  Whether house has a view to a   waterfront                                         |
+| 10 | view           |  Number of times house has been   viewed                                            |
+| 11 | condition      |  How good the condition is   (overall)                                              |
+| 12 | grade          |  overall grade given to the housing   unit, based on King County grading system     |
+| 13 | sqft_above     |  square footage of house (apart   from basement)                                    |
+| 14 | sqft_basement  |  square footage of the basement                                                     |
+| 15 | yr_built       |  Year when house was built                                                          |
+| 16 | yr_renovated   |  Year when house was renovated                                                      |
+| 17 | zipcode        |  zip code in which house is located                                                 |
+| 18 | lat            |  Latitude coordinate                                                                |
+| 19 | long           |  Longitude coordinate                                                               |
+| 20 | sqft_living15  |  The square footage of interior   housing living space for the nearest 15 neighbors |
+| 21 | sqft_lot15     |  The square footage of the land   lots of the nearest 15 neighbors                  |
 
 Primary consideration was given to obvious indicators such as, total square feet, amount of bedrooms and location. However, through EDA and other methodologies, additional factors proved to be salient price indicators. 
 
