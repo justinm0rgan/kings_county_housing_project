@@ -1,0 +1,8 @@
+# stuff to hide
+.ipynb_checkpoints
+/data/*
+
+# jupyter notebooks to not track
+Bakeoff_modeling_process.ipynb
+Kings_County_Principal_Components.ipynb
+
